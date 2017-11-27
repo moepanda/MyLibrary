@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.pupp.library.manage.dao.BookDao">
+
+	<!-- 借助sql元素定义一个动态sql,其他位置需要时直接借助include元素进行包含 -->
+	<sql id="queryWhereId">
+		<where>
+			<if test="title!=null and title!=''">
+				title like concat ("%",#{title},"%") 
+			</if>
+			<if test="borrow!=null">
+				and borrow = #{borrow} 
+			</if>
+			<if test="showon!=null">
+				and showon = #{showon} 
+			</if>
+		</where>
+	</sql>
+
+	<select id="findObjects" resultType="cc.pupp.library.manage.entity.Book">
+		select * from book_sunny order by createdTime desc
+	</select>
+	
+	<select id="findPageObjects" resultType="cc.pupp.library.manage.entity.Book">
+		select * from book_sunny 
+		<include refid="queryWhereId"/>
+		order by ${orderBy} desc 
+		limit #{startIndex},#{pageSize} 
+	</select>
+	
+	<select id="getRowCount" resultType="int">
+		select count(*) from book_sunny
+		<include refid="queryWhereId"/>
+	</select>
+	
+	<select id="findByTitle" resultType="cc.pupp.library.manage.entity.Book" parameterType="String">
+		select * from book_sunny where title=#{whatever}
+	</select>
+	
+	<delete id="deleteByTitle" parameterType="String">
+		delete from book_sunny where title=#{whatever}
+	</delete>
+	
+	<update id="moveByTitle">
+		update book_sunny set showon=${showon} where title=#{title};
+	</update>
+	
+	<update id="updateInfo">
+		update book_sunny set 
+		num=#{num},title=#{title},author=#{author},press=#{press},borrow=#{borrow},modifiedTime=NOW()  
+		where id=#{id};
+	</update>
+	
+	<insert id="saveNewBook">
+		insert into book_sunny 
+		value 
+		(null,#{num},#{title},#{author},#{press},#{borrow},1,"无",now(),now(),"sunny","sunny")
+	</insert>
+	
+	<select id="findMaxNum" resultType="int">
+		select max(num) from book_sunny
+	</select>
+	
+</mapper>
+
+<!-- 
+select title,borrow,showon from book_sunny 
+where 
+title like concat ("%","","%") 
+and borrow = 0
+and showon = 1
+order by num desc 
+limit 0,5
+ -->

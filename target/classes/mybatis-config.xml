@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+		  <!-- mybatis控制台LOG输出 -->
+        <setting name="logImpl" value="LOG4J2" />
+    </settings>
+    <!-- 
+    <typeAliases>
+       <typeAlias type="cc.pupp.library.manage.entity.Team" alias="team"/>
+       <typeAlias type="cc.pupp.library.manage.entity.Project" alias="project"/>
+    </typeAliases>
+    -->
+    
+    <typeAliases>
+      <package name="cc.pupp.library.system.entity"/>
+    </typeAliases>
+</configuration>

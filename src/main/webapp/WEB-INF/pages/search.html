@@ -1,0 +1,492 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- BEGIN META --> 
+	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+     <meta name="author" content="Custom Theme">
+	 <!-- END META -->
+    
+      <!-- BEGIN SHORTCUT ICON -->
+	  <link rel="shortcut icon" href="img/favicon.ico">
+	  <!-- END SHORTCUT ICON -->
+      <title>Advanced Table</title>
+	  
+	  
+	  <!-- BEGIN STYLESHEET --> 
+      <link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+      <link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+      <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- FONT AWESOME ICON CSS -->
+      <link href="assets/advanced-datatable/media/css/demo_page.css" rel="stylesheet"><!-- BOOTSTRAP ADVANCE DATATABLE  CSS -->
+      <link href="assets/advanced-datatable/media/css/demo_table.css" rel="stylesheet"><!-- BOOTSTRAP ADVANCE DATATABLE CSS -->
+      <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css"><!-- BOOTSTRAP DATATABLE CSS -->
+      <link href="css/style.css" rel="stylesheet"><!-- THEME BASIC CSS -->
+      <link href="css/style-responsive.css" rel="stylesheet"><!-- THEME RESPONSIVE CSS -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+	  <!-- END STYLESHEET --> 
+   </head>
+  <body>
+   <!-- BEGIN SECTION --> 
+      <section id="container" class="">
+	  <!-- BEGIN HEADER --> 
+         <header class="header white-bg">
+        <!-- SIDEBAR TOGGLE BUTTON -->
+			<div class="sidebar-toggle-box">
+			  <div  data-placement="right" class="fa fa-bars tooltips">
+			  </div>
+			</div>
+        <!-- SIDEBAR TOGGLE BUTTON  END-->
+            <a href="index.html" class="logo">My<span>Library</span></a>
+          <!-- START HEADER  NAV -->
+        
+        <nav class="nav notify-row" id="top_menu">
+          
+          <ul class="nav top-menu">
+            <!-- START NOTIFY TASK BAR -->
+            
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="fa fa-tasks">
+                </i>
+                <span class="badge bg-success">
+                 	 5
+                </span>
+              </a>
+              
+              <ul class="dropdown-menu extended tasks-bar">
+                <li class="notify-arrow notify-arrow-blue">
+                </li>
+                <li>
+                  <p class="blue">
+                    	5条未处理事项
+                  </p>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="task-info">
+                      <div class="desc">
+                        	新书添加
+                      </div>
+                      <div class="percent">
+                        40%
+                      </div>
+                    </div>
+                    <div class="progress progress-striped">
+                      <div class="progress-bar progress-bar-success set-40" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
+                        <span class="sr-only">
+                          	40% 完成 (成功)
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="task-info">
+                      <div class="desc">
+                        	面板更新
+                      </div>
+                      <div class="percent">
+                        60%
+                      </div>
+                    </div>
+                    <div class="progress progress-striped">
+                      <div class="progress-bar progress-bar-warning set-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                        <span class="sr-only">
+                         	 60% 完成 (警告)
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="task-info">
+                      <div class="desc">
+                        	错误条目修改
+                      </div>
+                      <div class="percent">
+                        87%
+                      </div>
+                    </div>
+                    <div class="progress progress-striped">
+                      <div class="progress-bar progress-bar-info set-87" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" >
+                        <span class="sr-only">
+                          	87% 完成
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="task-info">
+                      <div class="desc">
+                        	过期书籍删除
+                      </div>
+                      <div class="percent">
+                        	33%
+                      </div>
+                    </div>
+                    <div class="progress progress-striped">
+                      <div class="progress-bar progress-bar-danger set-33" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                        <span class="sr-only">
+                          	33% 完成 (danger)
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="external">
+                  <a href="#">
+                    	查看全部
+                  </a>
+                </li>
+              </ul>
+              
+            </li>
+            <!-- END NOTIFY TASK BAR -->
+            
+            <!-- START NOTIFY INBOX BAR -->
+            
+            <li id="header_inbox_bar" class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="fa fa-envelope-o">
+                </i>
+                <span class="badge bg-important">
+                 	 3
+                </span>
+              </a>
+              <ul class="dropdown-menu extended inbox">
+                <li class="notify-arrow notify-arrow-blue">
+                </li>
+                <li>
+                  <p class="blue">
+                    	3条未读消息
+                  </p>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <span class="photo">
+                      <img alt="avatar" src="./img/avatar-mini2.jpg">
+                    </span>
+                    <span class="subject">
+                      <span class="from">
+                        Parth Jani
+                      </span>
+                      <span class="time">
+                        10 mins
+                      </span>
+                    </span>
+                    <span class="message">
+                      		已添加最新100本书籍信息
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="photo">
+                      <img alt="avatar" src="./img/avatar-mini3.jpg">
+                    </span>
+                    <span class="subject">
+                      <span class="from">
+                        Jay Bardolia
+                      </span>
+                      <span class="time">
+                        3 hrs
+                      </span>
+                    </span>
+                    <span class="message">
+                      		明天我休息
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="photo">
+                      <img alt="avatar" src="./img/avatar-mini4.jpg">
+                    </span>
+                    <span class="subject">
+                      <span class="from">
+                        Pruthvi Bardolia
+                      </span>
+                      <span class="time">
+                        Just now
+                      </span>
+                    </span>
+                    <span class="message">
+                       		刚删错了一本书,超管给恢复下
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    	查看所有消息
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- END NOTIFY INBOX BAR -->
+            
+            <!-- START NOTIFY NOTIFICATION BAR -->
+            
+            <li id="header_notification_bar" class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="fa fa-bell-o">
+                </i>
+                <span class="badge bg-warning">
+                  0
+                </span>
+              </a>
+              <ul class="dropdown-menu extended notification">
+                <li class="notify-arrow notify-arrow-blue">
+                </li>
+                <li>
+                  <p class="blue">
+                    	无系统消息
+                  </p>
+                </li>
+
+            <!-- END NOTIFY NOTIFICATION BAR -->
+            
+          </ul>
+          
+          
+        </nav>
+        
+        <!-- END HEADER NAV -->
+        
+        
+        <!-- START USER LOGIN DROPDOWN  -->
+            <div class="top-nav ">
+               <ul class="nav pull-right top-menu">
+                  <li>
+                     <input type="text" class="form-control search" placeholder="搜索">
+                  </li>
+                  <li class="dropdown">
+                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                     <img alt="" src="img/avatar1_small.jpg">
+                     <span class="username">布克</span>
+                     <b class="caret"></b>
+                     </a>
+                     <ul class="dropdown-menu extended logout">
+                        <li class="log-arrow-up"></li>
+                        <li><a href="#"><i class=" fa fa-suitcase"></i>主页</a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>设置</a></li>
+                        <li><a href="#"><i class="fa fa-bell-o"></i>通知</a></li>
+                        <li><a href="login.html"><i class="fa fa-key"></i>登出</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+			<!-- END USER LOGIN DROPDOWN  -->
+         </header>
+		 <!-- END HEADER --> 
+		 
+		 <!-- BEGIN SIDEBAR --> 
+         <aside>
+            <div id="sidebar" class="nav-collapse">
+               <ul class="sidebar-menu" id="nav-accordion">
+                  <li>
+                     <a href="index.html">
+                     <i class="fa fa-dashboard"></i>
+                     <span>面板主页</span>
+                     </a>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                     <i class="fa fa-book"></i>
+                     <span>图书列表</span>
+                     </a>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                     <i class="fa fa-cogs"></i>
+                     <span>权限管理</span>
+                     <span class="label label-primary span-sidebar">3</span>
+                     </a>
+                     <ul class="sub">
+                        <li><a href="grids.html">管理员提升</a></li>
+                        <li><a href="calendar.html">回收站权限</a></li>
+                        <li><a href="gallery.html">其他权限</a></li>
+                     </ul>
+                  </li>
+               		
+                 
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                     <i class="fa fa-shopping-cart"></i>
+                     <span>回收站</span>
+               
+                     </a>
+                    
+                  </li>
+                 
+                 
+                  <li>
+                     <a href="login.html">
+                     <i class="fa fa-user"></i>
+                     <span>个人主页</span>
+                     </a>
+                  </li>
+                  
+               </ul>
+            </div>
+         </aside>
+		 <!-- END SIDEBAR -->
+		 
+		 
+		 <!-- BEGIN MAIN CONTENT --> 
+         <section id="main-content">
+            <section class="wrapper site-min-height">
+			  
+			  		 <!-- BEGIN PANEL SECTION --> 
+               <section class="panel">
+                  <header class="panel-heading">
+                     <span class="label label-primary">DataTables hidden row details example</span>
+                     <span class="tools pull-right">
+                     <a href="javascript:;" class="fa fa-chevron-down"></a>
+                     <a href="javascript:;" class="fa fa-times"></a>
+                     </span>
+                  </header>
+                  <div class="panel-body">
+                     <div class="adv-table">
+                        <table  class="display table table-bordered" id="hidden-table-info">
+                           <thead>
+                              <tr>
+                                 <th>Rendering engine</th>
+                                 <th>Browser</th>
+                                 <th class="hidden-phone">Platform(s)</th>
+                                 <th class="hidden-phone">Engine version</th>
+                                 <th class="hidden-phone">CSS grade</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="gradeX">
+                                 <td>Trident</td>
+                                 <td>Internet
+                                    Explorer 4.0
+                                 </td>
+                                 <td class="hidden-phone">Win 95+</td>
+                                 <td class="center hidden-phone">4</td>
+                                 <td class="center hidden-phone">X</td>
+                              </tr>
+                              <tr class="gradeC">
+                                 <td>Trident</td>
+                                 <td>Internet
+                                    Explorer 5.0
+                                 </td>
+                                 <td class="hidden-phone">Win 95+</td>
+                                 <td class="center hidden-phone">5</td>
+                                 <td class="center hidden-phone">C</td>
+                              </tr>
+                             
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </section>
+			   <!-- END PANEL SECTION --> 
+            </section>
+         </section>
+		 <!-- BEGIN MAIN CONTENT --> 
+		 <!-- BEGIN FOOTER --> 
+         <footer class="site-footer">
+            <div class="text-center">
+              2017 &copy; 图书管理系统 <a href="" target="_blank"></a>.
+               <a href="#" class="go-top">
+               <i class="fa fa-angle-up"></i>
+               </a>
+            </div>
+         </footer>
+		 <!-- END FOOTER --> 
+      </section>
+	  <!-- END SECTION --> 
+	  
+	  <!-- BEGIN JS --> 
+      <script language="javascript" src="assets/advanced-datatable/media/js/jquery.js"></script><!-- ADVANCE DATATABLE JS --> 
+      <script src="js/bootstrap.min.js" ></script><!-- BOOTSTRAP JS -->
+      <script class="include"  src="js/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDING JS -->
+      <script src="js/jquery.scrollTo.min.js" ></script><!-- SCROLLTO JS -->
+      <script src="js/jquery.nicescroll.js" ></script><!-- NICESCROLL JS -->
+      <script src="js/respond.min.js" ></script><!-- RESPOND JS -->
+      <script language="javascript" src="assets/advanced-datatable/media/js/jquery.dataTables.js"></script><!-- ADVANCE DATATABLE JS -->
+      <script  src="assets/data-tables/DT_bootstrap.js"></script><!-- DATATABLE JS -->
+      <script src="js/common-scripts.js" ></script><!-- BASIC COMMON JS  -->
+      <script >
+	   /* DATATABLE MODIFICATION SCRIPT */
+         /* Formating function for row details */
+         function fnFormatDetails ( oTable, nTr )
+         {
+             var aData = oTable.fnGetData( nTr );
+             var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
+             sOut += '<tr><td>Rendering engine:</td><td>'+aData[1]+' '+aData[4]+'</td></tr>';
+             sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
+             sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
+             sOut += '</table>';
+         
+             return sOut;
+         }
+         
+         $(document).ready(function() {
+             /*
+              * Insert a 'details' column to the table
+              */
+             var nCloneTh = document.createElement( 'th' );
+             var nCloneTd = document.createElement( 'td' );
+             nCloneTd.innerHTML = '<img src="assets/advanced-datatable/examples/examples_support/details_open.png">';
+             nCloneTd.className = "center";
+         
+             $('#hidden-table-info thead tr').each( function () {
+                 this.insertBefore( nCloneTh, this.childNodes[0] );
+             } );
+         
+             $('#hidden-table-info tbody tr').each( function () {
+                 this.insertBefore(  nCloneTd.cloneNode( true ), this.childNodes[0] );
+             } );
+         
+             /*
+              * Initialse DataTables, with no sorting on the 'details' column
+              */
+             var oTable = $('#hidden-table-info').dataTable( {
+                 "aoColumnDefs": [
+                     { "bSortable": false, "aTargets": [ 0 ] }
+                 ],
+                 "aaSorting": [[1, 'asc']]
+             });
+         
+             /* Add event listener for opening and closing details
+              * Note that the indicator for showing which row is open is not controlled by DataTables,
+              * rather it is done here
+              */
+             $('#hidden-table-info tbody td img').live('click', function () {
+                 var nTr = $(this).parents('tr')[0];
+                 if ( oTable.fnIsOpen(nTr) )
+                 {
+                     /* This row is already open - close it */
+                     this.src = "assets/advanced-datatable/examples/examples_support/details_open.png";
+                     oTable.fnClose( nTr );
+                 }
+                 else
+                 {
+                     /* Open this row */
+                     this.src = "assets/advanced-datatable/examples/examples_support/details_close.png";
+                     oTable.fnOpen( nTr, fnFormatDetails(oTable, nTr), 'details' );
+                 }
+             } );
+         } );
+      </script>
+	  <!-- END JS --> 
+   </body>
+</html>
+
+
